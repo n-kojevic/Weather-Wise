@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/imgs/weather logo.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <!-- Aplikacija -->
+    <div class="app">
+      <!-- Animacija unutar aplikacije -->
+      <div class="intro-animation" id="introAnimation">
+        <div class="intro-left">Weather</div>
+        <div class="intro-right blue">
+          Wise
+          <div class="weather-logo">
+            <img src="/assets/imgs/weather logo.png" alt="Animation of cloud" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Heder sekcija -->
+      <header class="header">
+        <h1 class="weather-title">Weather<span>Wise</span></h1>
+        <div class="weather-logo">
+          <img src="/assets/imgs/weather logo.png" alt="Animation of cloud" />
+        </div>
+      </header>
+
+      <!-- Glavna sekcija -->
+      <section class="weather-body">
+        <div class="search">
+          <input type="text" class="input-field" placeholder="Search" />
+          <img
+            class="search-img"
+            src="/assets/imgs/search..png"
+            alt="Search image"
+          />
+          <div class="error-message"></div>
+        </div>
+
+        <div class="info">
+          <img
+            class="weather-img"
+            src="/assets/imgs/thunderstorm.png"
+            alt="Image of current weather condition"
+          />
+          <h1 class="temp">11°C</h1>
+          <h2 class="city">New York</h2>
+        </div>
+
+        <div class="condition">
+          <div class="humidity con-box">
+            <img
+              src="/assets/imgs/water-drop.png"
+              alt="Animation of water drop"
+            />
+            <div class="con-info">
+              <h4 class="hnumber">12%</h4>
+              <p class="title">Humidity</p>
+            </div>
+          </div>
+          <div class="wind con-box">
+            <img src="/assets/imgs/wind.png" alt="Animation of wind" />
+            <div class="con-info">
+              <h4 class="wnumber">67 KM/H</h4>
+              <p class="title">Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

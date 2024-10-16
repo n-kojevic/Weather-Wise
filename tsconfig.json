@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./out", // Gde će se generisati JavaScript fajlovi
+    "rootDir": "./src", // Gde se nalaze TypeScript fajlovi
+    "target": "es6", // Verzija JavaScripta koja će se koristiti
+    "module": "es6" // Koristi ES6 module
+  },
+  "include": ["src/**/*"], // Uključi sve fajlove iz /src
+  "exclude": ["node_modules"] // Isključi node_modules
+}
