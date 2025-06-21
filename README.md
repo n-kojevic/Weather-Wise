@@ -1,71 +1,92 @@
 WeatherApp
 
-Uvodna animacija:
+Introduction Animation
 
-Prilikom učitavanja aplikacije, pokreće se glatka uvodna animacija. U ovoj animaciji, dva teksta (jedan s lijeve i jedan s desne strane) kreću se prema centru ekrana. Kada se spoje u centru, postepeno blijede, otkrivajući glavnu stranicu aplikacije za vremensku prognozu. Ova animacija daje dinamičan i atraktivan prvi dojam prije nego što korisnik počne koristiti aplikaciju.
+On app load, a smooth intro animation runs where two texts (one from the left and one from the right) move toward the center of the screen. When they meet in the middle, they gradually fade out, revealing the main weather forecast page. This animation creates a dynamic and engaging first impression before the user starts using the app.
 
-Opis:
+---
 
-WeatherApp je jednostavna web aplikacija koja omogućava korisnicima da unesu ime grada i dobiju trenutne podatke o vremenu, uključujući temperaturu, vlažnost vazduha, brzinu vetra i vremenske uslove. Na osnovu vremenskih uslova, aplikacija dinamički prikazuje odgovarajuću sliku, npr. sunčano, oblačno, kišovito itd.
+Description
 
-Sadržaj:
+WeatherApp is a simple web application that allows users to enter a city name and get current weather data, including temperature, humidity, wind speed, and weather conditions. Based on the weather conditions, the app dynamically displays a corresponding image, e.g., sunny, cloudy, rainy, etc.
 
--Tehnologije
--Instalacija
--Upotreba
--Funkcionalnosti
--API
--Autor
+---
 
-Tehnologije:
+Contents
 
-Aplikacija je izrađena koristeći sledeće tehnologije:
-HTML5
-CSS3
-TypeScript
-JavaScript
-OpenWeather API za dobijanje podataka o vremenu
+- Technologies  
+- Installation  
+- Usage  
+- Features  
+- API  
+- Author  
 
-Instalacija:
+---
 
-GitHub:
+Technologies
 
-https://github.com/n-kojevic/Weather-Wise.git
+This application is built using the following technologies:  
+- HTML5  
+- CSS3  
+- TypeScript  
+- JavaScript  
+- OpenWeather API for fetching weather data  
 
-Navigiraj u direktorijum projekta:
+---
 
+Screenshots
+
+https://github.com/n-kojevic/Weather-Wise/blob/main/assets/imgs/iPad-1750508923252.jpeg?raw=true  
+https://github.com/n-kojevic/Weather-Wise/blob/main/assets/imgs/MacBook%20Pro-1750508921971.jpeg?raw=true  
+
+---
+
+Installation
+
+Clone the repository:  
+git clone https://github.com/n-kojevic/Weather-Wise.git
+
+Navigate to the project directory:  
 cd weather-app
 
-Pokretanje aplikacije:
-Otvori index.html u pretraživaču kako bi aplikacija radila lokalno.
+Run the app locally by opening the index.html file in your browser.
 
-Upotreba:
+---
 
--Unesite ime grada u polje za pretragu.
--Kliknite na dugme za pretragu ili pritisnite Enter.
--Aplikacija će prikazati trenutne vremenske podatke za uneti grad, uključujući temperaturu, vlažnost vazduha i brzinu vetra.
--Na osnovu trenutnih vremenskih uslova, aplikacija će promeniti sliku u skladu sa vremenskom situacijom (npr. sunčano, oblačno, kiša, sneg).
+Usage
 
-Funkcionalnosti:
+- Enter the city name in the search field.  
+- Click the search button or press Enter.  
+- The app will display current weather data for the entered city, including temperature, humidity, and wind speed.  
+- Based on the weather conditions, the app will change the image accordingly (e.g., sunny, cloudy, rain, snow).  
 
--Pretraga vremenskih podataka za bilo koji grad putem OpenWeather API-ja.
--Dinamička validacija unosa:
--Polje za pretragu mora sadržavati samo slova.
--Polje ne sme biti prazno.
--Ako se unese nevažeći grad, prikazuje se poruka o grešci.
--Prikaz vremenskih podataka, uključujući:
--Temperatura (°C)
--Vlažnost vazduha (%)
--Brzina vetra (Km/h)
--Dinamička promena slike na osnovu vremenskih uslova (npr. sunčano, oblačno, kišovito, snežno).
+---
 
-API:
+Features
 
-Aplikacija koristi OpenWeather API za dohvaćanje vremenskih podataka. Da bi aplikacija ispravno radila, koristi se API ključ koji se poziva kroz HTTP GET zahtev.
+- Search weather data for any city using the OpenWeather API.  
+- Dynamic input validation:  
+  - The search field only accepts letters.  
+  - The field cannot be empty.  
+  - Shows an error message if an invalid city is entered.  
+- Display of weather data including:  
+  - Temperature (°C)  
+  - Humidity (%)  
+  - Wind speed (km/h)  
+- Dynamic image changes according to the weather conditions (sunny, cloudy, rainy, snowy).  
 
-API endpoint:
+---
+
+API
+
+The app uses the OpenWeather API to fetch weather data. An API key is required and used through an HTTP GET request.
+
+API endpoint example:  
 https://api.openweathermap.org/data/2.5/weather?q={CITY_NAME}&appid={API_KEY}&units=metric
 
-Autor:
-Ime autora: Nikola Kojević
+---
+
+Author
+
+Nikola Kojević  
 GitHub: https://github.com/n-kojevic
